@@ -1,0 +1,127 @@
+@import '../mixins/mixins';
+/* ==================  Font Part Start  ================== */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&display=swap');
+
+/* ==================  Common Part Start  ================== */
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.common_head {
+    text-align: center;
+    margin-bottom: 75px;
+    position: relative;
+    &::before {
+        position: absolute;
+        content: '';
+        bottom: -10px;
+        left: 50%;
+        width: 10px;
+        height: 3px;
+        transform: translateX(-50%);
+        border-radius: 25px;
+        background: $hover;
+    }
+
+    h2 {
+        @include text(40px, 400, #fff);
+        @include f-yeseva();
+        display: inline-block;
+        position: relative;
+        &::after {
+            @include af_bf();
+            bottom: -10px;
+            left: 60px;
+            width: 50px;
+            height: 3px;
+            border-radius: 25px;
+            background: $hover;
+        }
+
+        &::before {
+            @include af_bf();
+            bottom: -10px;
+            right: 60px;
+            width: 50px;
+            height: 3px;
+            border-radius: 25px;
+            background: $hover;
+        }
+    }
+}
+
+.common_head_II {
+    text-align: left;
+
+    h2 {
+        @include text(40px, 400, #fff);
+        @include f-yeseva();
+        display: inline-block;
+        position: relative;
+
+        &::after {
+            @include af_bf();
+            bottom: -10px;
+            left: 0px;
+            width: 100px;
+            height: 3px;
+            border-radius: 25px;
+            background: $hover;
+        }
+
+        &::before {
+            @include af_bf();
+            bottom: -10px;
+            left: 105px;
+            width: 10px;
+            height: 3px;
+            border-radius: 25px;
+            background: $hover;
+        }
+    }
+}
+body{
+    background-size: cover !important; 
+    background-attachment: fixed !important;
+    background-repeat: no-repeat !important;
+}
+
+
+/* ==================  Common Part End  ================== */

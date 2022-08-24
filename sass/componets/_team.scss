@@ -1,0 +1,83 @@
+@import '../mixins/mixins';
+/* =========================== team css start ================================= */
+#team{
+    padding: 100px 0;
+    .common_head{
+        z-index: 9999;
+        &::before {
+            bottom: -10px;
+            left: 50%;
+        }
+    
+        h2 {
+            &::after {
+                bottom: -10px;
+                left: 40px;
+            }
+    
+            &::before {
+                @include af_bf();
+                bottom: -10px;
+                right: 40px;
+            }
+        }
+    }
+    .team_details{
+        text-align: center;
+        position: relative;
+        padding-top: 20px;
+        transition: transform .3s;
+        z-index: 1;
+        .hover_img{
+            position: absolute;
+            top: -235px;
+            left: -70px;
+            width: 100%;
+            opacity: 0;
+            transition: all linear .3s;
+            z-index: -10;
+        }
+        &:hover{
+            transform: translateY(-20px);
+            .hover_img{
+                opacity: 1;
+                z-index: -10;
+            }
+            ul{
+                li{
+                    a{
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+        .team_img{
+            img{
+                border-radius: 50%;
+            }
+        }
+        h2{
+            @include text(24,300,#fff);
+        }
+        h6{
+            @include text(18,300,#fff);
+        }
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            li{
+                a{
+                    display: none;
+                    font-size: 20px;
+                    color: #fff;
+                    margin: 10px;
+                    &:hover{
+                        color: $hover;
+                    }
+                }
+            }
+        }
+    }
+}
+/* =========================== team css end ================================= */

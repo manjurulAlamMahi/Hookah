@@ -1,0 +1,98 @@
+@import '../mixins/mixins';
+/* =========================== footer css start ================================= */
+#footer{
+    padding: 100px 0 30px 0;
+    .footer_content{
+        .footer_header{
+            h2{
+                @include text(24px,400,#fff);
+                @include f-yeseva();
+                position: relative;
+                &::before {
+                    position: absolute;
+                    content: '';
+                    bottom: -10px;
+                    left: 50%;
+                    width: 60px;
+                    height: 3px;
+                    transform: translateX(-50%);
+                    border-radius: 25px;
+                    background: $hover;
+                }
+            }
+        }
+        ul{
+            padding: 45px 0 60px 0;
+            li{
+                @include text(20px,400,#fff);
+                a{
+                    @include text(20px,400,#fff);
+                    @include transition();
+                    &:hover{
+                        color: $hover;
+                    }
+                }
+                p{
+                    @include text(20px,400,#fff);
+                    span{
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+    .footer_social{
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            position: relative;
+            &::after {
+                @include af_bf();
+                top: 50%;
+                left: 0;
+                transform: translateY(-50%);
+                width: 385px;
+                height: 1px;
+                border-radius: 25px;
+                background: rgba(255, 255, 255, 0.15);
+            }
+    
+            &::before {
+                @include af_bf();
+                top: 50%;
+                right: 0;
+                transform: translateY(-50%);
+                width: 385px;
+                height: 1px;
+                border-radius: 25px;
+                background: rgba(255, 255, 255, 0.15);
+            }
+            li{
+                a{
+                    width: 70px;
+                    height: 70px;
+                    background: #fff;
+                    border-radius: 50%;
+                    text-align: center;
+                    line-height: 70px;
+                    font-size: 20px;
+                    color: $hover;
+                    margin: 0 10px;
+                    @include transition();
+                    &:hover{
+                        background: $hover;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+    .footer_copyright{
+        padding-top: 25px;
+        p{
+            @include text(20px,400,#fff);
+        }
+    }
+}
+/* =========================== footer css end ================================= */

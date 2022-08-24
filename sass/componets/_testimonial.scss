@@ -1,0 +1,51 @@
+@import '../mixins/mixins';
+
+/* =========================== testimonial css start ================================= */
+#testimonial {
+    padding: 58px 0;
+    background: #050505;
+    .common_head{
+    
+        h2 {
+            &::after {
+                left: 100px;
+            }
+            &::before {
+                right: 100px;
+            }
+        }
+    }
+
+    .testimonial_text {
+        padding: 12px 15px;
+        background: #0a0b0c;
+        height: 100%;
+
+        p {
+            @include text(19px, 300, #fff);
+            padding: 5px 0;
+        }
+
+        h2 {
+            @include text(24px, 500, #fff);
+            padding: 5px 0;
+        }
+
+        h6 {
+            @include text(20px, 300, #fff);
+        }
+
+        ul {
+            padding-top: 5px;
+            li {
+                padding-right: 5px;
+                i {
+                    font-size: 20px;
+                    color: $hover;
+                }
+            }
+        }
+    }
+}
+
+/* =========================== testimonial css end ================================= */

@@ -1,0 +1,112 @@
+@import '../mixins/mixins';
+/* =========================== Happy Hour css start ================================= */
+#happy_hour{
+    background: #050505;
+    padding: 60px 0;
+    position: relative;
+    z-index: 1;
+    .bg_ovrly{
+        position: absolute;
+        top: -185px;
+        left: 0;
+        width: 100%;
+        z-index: -1;
+        opacity: 20%;
+    }
+    .next_happy{
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            position: relative;
+            padding-right: 55px;
+            &::after{
+                @include af_bf();
+                width: 1px;
+                height: 300px;
+                right: 0;
+                top: 60px;
+                background: rgba(255, 255, 255, 0.15);
+            }
+            .timer_part2,
+            .timer_part4,
+            .timer_part3,
+            .timer_part{
+                @include c_bg();
+                width: 42.9%;
+                height: 150px;
+                border-radius: 50%;
+                margin: 0 10px 20px 10px;
+                border: 1px solid rgba(255, 255, 255, 0.15);
+                padding: 20px 0;
+                color: #fff;
+                font-size: 30px;
+                font-weight: 400;
+                @include f-yeseva();
+                text-align: center;
+                h6{
+                    @include text(60px,400,#fff);
+                    @include f-yeseva();
+                }
+                P{
+                    @include text(20px,400,#fff);
+                    @include f-yeseva();
+                }
+            }
+            h3{
+                @include text(30px,400,#fff);
+                @include f-yeseva();
+                text-align: center;
+                padding-top: 15px;
+            }
+        }
+        
+    }
+    .happy_weeks{
+        padding-left: 55px;
+        ul{
+            padding: 48px 0;
+            .weeks_days{
+                padding-bottom: 45px;
+                position: relative;
+                &::after {
+                    @include af_bf();
+                    bottom: 20px;
+                    left: 0px;
+                    width: 50px;
+                    height: 3px;
+                    border-radius: 25px;
+                    background: $hover;
+                }
+        
+                &::before {
+                    @include af_bf();
+                    bottom: 20px;
+                    left: 55px;
+                    width: 10px;
+                    height: 3px;
+                    border-radius: 25px;
+                    background: $hover;
+                }
+                p{
+                    @include text(26px,400,#fff);
+                    span{
+                        display: block;
+                        @include text(24px,300,#fff);
+                    }
+                }
+                &:last-child{
+                    padding-bottom: 0;
+                    &::after {
+                        display: none;
+                    }
+            
+                    &::before {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+/* =========================== Happy Hour css end ================================= */

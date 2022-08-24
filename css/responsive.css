@@ -1,0 +1,624 @@
+:root {
+    --hover: #ed5034;
+}
+
+@media(min-width:1400px) {}
+
+@media(min-width:1200px) and (max-width:1399.98px) {
+    
+}
+
+@media(min-width:992px) and (max-width:1100.98px) {
+    #happy_hour .bg_ovrly {
+        display: none;
+    }
+
+    /* menu */
+    #main_nav .navbar-brand img {
+        width: 130px;
+    }
+
+    #main_nav .menu_part ul li a {
+        font-size: 12px;
+        padding: 0 10px;
+        margin: 0 10px;
+        line-height: 50px;
+    }
+
+    /* banner */
+    #banner .banner_slider .banner_item {
+        padding: 170px 0 180px 0;
+    }
+
+    #banner .banner_slider .banner_item .prv_arr,
+    #banner .banner_slider .banner_item .nxt_arr {
+        bottom: -45%;
+    }
+
+    /* story */
+    #story {
+        padding: 40px 0;
+    }
+
+    #story .story_img {
+        margin: 80px 0 0 0;
+    }
+
+    #story .story_img img {
+        position: inherit;
+        width: 785px;
+    }
+
+    #story .common_head_II h2 {
+        margin-bottom: 20px;
+    }
+
+    #story .story_img .play {
+        top: 25%;
+        right: 30%;
+    }
+
+    #story .story_img .ovrly {
+        display: none;
+    }
+
+    /* happy */
+    #happy_hour .next_happy ul .timer_part2,
+    #happy_hour .next_happy ul .timer_part4,
+    #happy_hour .next_happy ul .timer_part3,
+    #happy_hour .next_happy ul .timer_part {
+        width: 125px;
+        height: 125px;
+        padding: 20px 0;
+    }
+
+    #happy_hour .next_happy ul .timer_part2 h6,
+    #happy_hour .next_happy ul .timer_part4 h6,
+    #happy_hour .next_happy ul .timer_part3 h6,
+    #happy_hour .next_happy ul .timer_part h6 {
+        font-size: 35px;
+        font-weight: 400;
+        color: #fff;
+        font-family: 'Yeseva One', cursive;
+    }
+
+    /* gallary */
+    #gallery {
+        padding: 40px 0;
+    }
+
+    #gallery .gallery_img {
+
+        margin: 10px 0;
+    }
+    /* footer */
+    #footer .footer_social ul {
+        z-index: 1;
+    }
+
+    #footer .footer_social ul::before {
+        z-index: -1;
+    }
+
+    #footer .footer_social ul::after {
+        z-index: -1;
+    }
+}
+
+
+@media(min-width:768px) and (max-width:991.98px) {
+    #happy_hour .bg_ovrly {
+        display: none;
+    }
+
+    /* menu */
+    #main_nav .navbar-brand img {
+        width: 130px;
+    }
+
+    #main_nav .menu_part ul li a {
+        font-size: 12px;
+        padding: 0 10px;
+        margin: 0 10px;
+        line-height: 50px;
+    }
+
+    /* banner */
+    #banner .banner_slider .banner_item {
+        padding: 170px 0 180px 0;
+    }
+
+    #banner .banner_slider .banner_item .prv_arr,
+    #banner .banner_slider .banner_item .nxt_arr {
+        bottom: -45%;
+    }
+
+    /* story */
+    #story {
+        padding: 40px 0;
+    }
+
+    #story .story_img {
+        margin: 80px 0 0 0;
+    }
+
+    #story .story_img img {
+        position: inherit;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    #story .common_head_II h2 {
+        margin-bottom: 20px;
+    }
+
+    #story .story_img .play {
+        top: 25%;
+        right: 50%;
+        transform: translateX(-50%);
+    }
+
+    /* happy */
+    #happy_hour {
+        background: transparent;
+        padding: 40px 0;
+    }
+
+    #happy_hour .next_happy ul .timer_part2,
+    #happy_hour .next_happy ul .timer_part4,
+    #happy_hour .next_happy ul .timer_part3,
+    #happy_hour .next_happy ul .timer_part {
+        width: 200px;
+        height: 200px;
+        padding: 40px 0;
+    }
+
+    #happy_hour .bg_ovrly {
+        display: none;
+    }
+
+    #happy_hour .next_happy ul::after {
+        display: none;
+    }
+
+    /* team */
+    #team {
+        padding: 40px 0;
+    }
+
+    #team .team_details h2 {
+        font-size: 18px;
+        padding: 10px 0;
+    }
+
+    #team .team_details .hover_img {
+        display: none;
+    }
+
+    /* gallary */
+    #gallery {
+        padding: 40px 0;
+    }
+
+    #gallery .gallery_img {
+
+        margin: 10px 0;
+    }
+
+    /* footer */
+    #footer .footer_social ul {
+        z-index: 1;
+    }
+
+    #footer .footer_social ul::before {
+        z-index: -1;
+    }
+
+    #footer .footer_social ul::after {
+        z-index: -1;
+    }
+
+}
+
+@media(min-width:576px) and (max-width:767.98px) {
+
+
+    /* common */
+    .common_head h2 {
+        font-size: 21px;
+    }
+
+    .common_head::before {
+        display: none;
+    }
+
+    /* Navigation */
+    #main_nav .navbar-brand img {
+        width: 130px;
+    }
+
+    #main_nav .navbar-toggler i {
+        font-size: 20px;
+        color: #fff;
+    }
+
+    #main_nav .navbar-toggler:focus {
+        box-shadow: 0 0 0 0;
+    }
+
+    #main_nav #navbarSupportedContent {
+        text-align: center;
+        background: url(../images/home/Smoke.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    #main_nav #navbarSupportedContent ul li a {
+        background: transparent;
+    }
+
+    /* banner */
+    #banner .banner_slider .banner_item {
+        padding: 130px 0 230px 0;
+    }
+
+    #banner .banner_slider .banner_item .banner_text p {
+        font-size: 23px;
+        font-weight: 200;
+    }
+
+    #banner .banner_slider .banner_item .banner_text h1 {
+        font-size: 45px;
+        padding-bottom: 20px;
+    }
+
+    #banner .banner_slider .banner_item .prv_arr,
+    #banner .banner_slider .banner_item .nxt_arr {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 20px;
+        bottom: -40%;
+        margin: 0 5px;
+    }
+
+    /* story */
+    #story {
+        padding: 30px 0;
+    }
+
+    #story .story_img {
+        display: none;
+    }
+
+    #story .story_content {
+        text-align: center;
+    }
+
+    #story .story_content .common_head_II {
+        text-align: center;
+    }
+
+    /* happy hour */
+    #happy_hour {
+        padding: 30px 0;
+    }
+
+    #happy_hour .bg_ovrly {
+        display: none;
+    }
+
+    #happy_hour .next_happy ul,
+    #happy_hour .next_happy ul,
+    #happy_hour .next_happy ul,
+    #happy_hour .next_happy ul {
+        padding: 0 25px;
+    }
+
+    #happy_hour .next_happy ul .timer_part2,
+    #happy_hour .next_happy ul .timer_part4,
+    #happy_hour .next_happy ul .timer_part3,
+    #happy_hour .next_happy ul .timer_part {
+        width: 150px;
+        height: 150px;
+        padding: 20px 0;
+    }
+
+    #happy_hour .next_happy ul .timer_part2 h6,
+    #happy_hour .next_happy ul .timer_part4 h6,
+    #happy_hour .next_happy ul .timer_part3 h6,
+    #happy_hour .next_happy ul .timer_part h6 {
+        font-size: 35px;
+        padding: 10px 0;
+    }
+
+    #happy_hour .next_happy ul .timer_part2 P,
+    #happy_hour .next_happy ul .timer_part4 P,
+    #happy_hour .next_happy ul .timer_part3 P,
+    #happy_hour .next_happy ul .timer_part P {
+        font-size: 24px;
+    }
+
+    /* team */
+    #team {
+        padding: 30px 0;
+    }
+
+    #team .team_details:hover .hover_img {
+        display: none;
+    }
+
+    #team .team_details .hover_img {
+        display: none;
+    }
+
+    #team .team_details ul li a {
+        display: inline-block;
+        font-size: 20px;
+        color: #fff;
+        margin: 10px;
+    }
+
+    #team .team_details:hover {
+        transform: translateY(0);
+    }
+
+    #team .team_details h2 {
+        font-size: 24;
+        padding: 10px 0;
+    }
+
+    /* gallary */
+    #gallery {
+        padding: 30px 0;
+        position: relative;
+        z-index: 9999;
+    }
+
+    #gallery .gallery_img {
+        margin: 10px 0;
+    }
+
+    #gallery .gal_button {
+        position: relative;
+        z-index: 99999;
+    }
+
+    /* reservation */
+    #reservation {
+        padding: 30px 0;
+    }
+
+    #reservation .reservation_img {
+        margin-bottom: 20px;
+    }
+
+    #testimonial .common_head h2::before {
+        right: 50%;
+    }
+
+    #testimonial .common_head h2::after {
+        left: 50%;
+    }
+
+    #reservation .reservation_img .ovrly_bg {
+        display: none;
+    }
+
+    /* footer */
+    #footer .footer_social ul::before {
+        display: none;
+    }
+
+    #footer .footer_social ul::after {
+        display: none;
+    }
+
+    #footer .footer_social ul li a {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    #footer .footer_copyright p {
+        font-size: 10px;
+    }
+}
+
+@media(max-width:575.98px) {
+
+    /* common */
+    .common_head h2 {
+        font-size: 21px;
+    }
+
+    .common_head::before {
+        display: none;
+    }
+
+    /* Navigation */
+    #main_nav .navbar-brand img {
+        width: 130px;
+    }
+
+    #main_nav .navbar-toggler i {
+        font-size: 20px;
+        color: #fff;
+    }
+
+    #main_nav .navbar-toggler:focus {
+        box-shadow: 0 0 0 0;
+    }
+
+    #main_nav #navbarSupportedContent {
+        text-align: center;
+        background: url(../images/home/Smoke.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    #main_nav #navbarSupportedContent ul li a {
+        background: transparent;
+    }
+
+    /* banner */
+    #banner .banner_slider .banner_item {
+        padding: 130px 0 230px 0;
+    }
+
+    #banner .banner_slider .banner_item .banner_text p {
+        font-size: 23px;
+        font-weight: 200;
+    }
+
+    #banner .banner_slider .banner_item .banner_text h1 {
+        font-size: 45px;
+        padding-bottom: 20px;
+    }
+
+    #banner .banner_slider .banner_item .prv_arr,
+    #banner .banner_slider .banner_item .nxt_arr {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 20px;
+        bottom: -40%;
+        margin: 0 5px;
+    }
+
+    /* story */
+    #story {
+        padding: 30px 0;
+    }
+
+    #story .story_img {
+        display: none;
+    }
+
+    #story .story_content {
+        text-align: center;
+    }
+
+    #story .story_content .common_head_II {
+        text-align: center;
+    }
+
+    /* happy hour */
+    #happy_hour {
+        padding: 30px 0;
+    }
+
+    #happy_hour .bg_ovrly {
+        display: none;
+    }
+
+    #happy_hour .next_happy ul,
+    #happy_hour .next_happy ul,
+    #happy_hour .next_happy ul,
+    #happy_hour .next_happy ul {
+        padding: 0 25px;
+    }
+
+    #happy_hour .next_happy ul .timer_part2,
+    #happy_hour .next_happy ul .timer_part4,
+    #happy_hour .next_happy ul .timer_part3,
+    #happy_hour .next_happy ul .timer_part {
+        width: 100px;
+        height: 100px;
+        padding: 20px 0;
+    }
+
+    #happy_hour .next_happy ul .timer_part2 h6,
+    #happy_hour .next_happy ul .timer_part4 h6,
+    #happy_hour .next_happy ul .timer_part3 h6,
+    #happy_hour .next_happy ul .timer_part h6 {
+        font-size: 24px;
+    }
+
+    /* team */
+    #team {
+        padding: 30px 0;
+    }
+
+    #team .team_details:hover .hover_img {
+        display: none;
+    }
+
+    #team .team_details .hover_img {
+        display: none;
+    }
+
+    #team .team_details ul li a {
+        display: inline-block;
+        font-size: 20px;
+        color: #fff;
+        margin: 10px;
+    }
+
+    #team .team_details:hover {
+        transform: translateY(0);
+    }
+
+    #team .team_details h2 {
+        font-size: 24;
+        padding: 10px 0;
+    }
+
+    /* gallary */
+    #gallery {
+        padding: 30px 0;
+        position: relative;
+        z-index: 9999;
+    }
+
+    #gallery .gallery_img {
+        margin: 10px 0;
+    }
+
+    #gallery .gal_button {
+        position: relative;
+        z-index: 99999;
+    }
+
+    /* reservation */
+    #reservation {
+        padding: 30px 0;
+    }
+
+    #reservation .reservation_img {
+        margin-bottom: 20px;
+    }
+
+    #testimonial .common_head h2::before {
+        right: 50%;
+    }
+
+    #testimonial .common_head h2::after {
+        left: 50%;
+    }
+
+    #reservation .reservation_img .ovrly_bg {
+        display: none;
+    }
+
+    /* footer */
+    #footer .footer_social ul::before {
+        display: none;
+    }
+
+    #footer .footer_social ul::after {
+        display: none;
+    }
+
+    #footer .footer_social ul li a {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    #footer .footer_copyright p {
+        font-size: 10px;
+    }
+}

@@ -1,0 +1,77 @@
+@import '../mixins/mixins';
+
+/* =========================== story css start ================================= */
+#story {
+    padding: 150px 0;
+    z-index: 2;
+
+    .story_img {
+        position: relative;
+        z-index: 10;
+
+        img {
+            position: absolute;
+            top: -55px;
+            left: -85px;
+        }
+        .play{
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+            color: $hover;
+            font-size: 20px;
+            background: #fff;
+            border-radius: 50%;
+            position: absolute;
+            top: 205px;
+            right: 150px;
+            &::after{
+                @include af_bf();
+                top: -12px;
+                left: -12px;
+                width: 124px;
+                height: 124px;
+                border-radius: 50%;
+                border: 1px solid rgba(255, 255, 255, 0.15);
+            }
+        }
+
+        .ovrly {
+            position: absolute;
+            top: -345px;
+            left: -5px;
+            z-index: 99;
+        }
+    }
+
+    .story_content {
+        p {
+            @include text(18px, 400, #fff);
+            line-height: 28px;
+            padding: 40px 0;
+
+            span {
+                display: block;
+                padding-top: 30px;
+            }
+        }
+        .explore_more{
+            padding: 20px 30px;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 50px;
+            @include c_bg();
+            display: inline-block;
+            position: relative;
+            z-index: 10;
+            a {
+                @include text(20px, 400, $hover);
+                @include f-yeseva();
+                z-index: 9999;
+            }
+        }
+        
+    }
+}
+
+/* =========================== story css end ================================= */

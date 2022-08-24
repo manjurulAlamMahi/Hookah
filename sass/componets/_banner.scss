@@ -1,0 +1,102 @@
+@import '../mixins/mixins';
+/* =========================== banner css start ================================= */
+#banner{
+    .banner_slider{
+        .banner_item{
+            padding: 285px 0 265px 0;
+            @include c_bg();
+            position: relative;
+            z-index: 1;
+            &::after{
+                @include af_bf();
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.7);
+                z-index: -1;
+            }
+            .prv_arr,
+            .nxt_arr{
+                width: 70px;
+                height: 70px;
+                line-height: 70px;
+                font-size: 28px;
+                color: #646668;
+                text-align: center;
+                position: absolute;
+                bottom: -80%;
+                border: 1px solid #646668;
+                background: transparent;
+                border-radius: 50%;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+                transition: all linear 0.3s;
+                z-index: 9;
+                -webkit-transition: all linear 0.3s;
+                -moz-transition: all linear 0.3s;
+                -ms-transition: all linear 0.3s;
+                -o-transition: all linear 0.3s;
+                &:hover{
+                    color: #ed5034;
+                    background: #ffffff;
+                    border-color: #ffffff;
+                }
+            }
+            .prv_arr{
+                right: 51%;
+            }
+            .nxt_arr{
+                left: 50%;
+            }
+            .banner_text{
+                text-align: center;
+                p{
+                    @include text(36px,100,#fff);
+                }
+                h1{
+                    @include f-yeseva();
+                    @include text(72px,400,#fff);
+                    span{
+                        display: block;
+                    }
+                }
+                h6{
+                    @include text(28px,100,#fff);
+                    display: inline-block;
+                    position: relative;
+                    &::after{
+                        @include af_bf();
+                        top: 50%;
+                        transform: translateY(-50%);
+                        left: -125px;
+                        width: 102px;
+                        height: 2px;
+                        background: $hover;
+                    }
+                    &::before{
+                        @include af_bf();
+                        top: 50%;
+                        transform: translateY(-50%);
+                        right: -125px;
+                        width: 102px;
+                        height: 2px;
+                        background: $hover;
+                    }
+                }
+            }
+            .smoke_ovrly{
+                @include c_bg();
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: -2;
+            }
+        }
+    }
+}
+/* =========================== banner css end ================================= */

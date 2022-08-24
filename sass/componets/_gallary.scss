@@ -1,0 +1,48 @@
+@import '../mixins/mixins';
+/* =========================== gallary css start ================================= */
+#gallery{
+    padding: 58px 0;
+    .gallery_img{
+        position: relative;
+        .ovrly{
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            width: 100px;
+            height: 100px;
+            background: rgba(0, 0, 0, 0.8);
+            text-align: center;
+            transform: scale(0);
+            @include transition();
+            a{
+                font-size: 40px;
+                color: #fff;
+                line-height: 100px;
+                transform: scale(0.8);
+                @include transition();
+                &:hover{
+                    transform: scale(1.2);
+                    color: $hover;
+                }
+            }
+        }
+        &:hover{
+            .ovrly{
+                transform: scale(1);
+            }
+        }
+    }
+    .gal_button{
+        display: inline-block;
+        padding: 20px 45px;
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        border-radius: 50px;
+        @include c_bg();
+        margin-top: 60px;
+        a{
+            @include text(20px,400,$hover);
+            @include f-yeseva();
+        }
+    }
+}
+/* =========================== gallary css end ================================= */
